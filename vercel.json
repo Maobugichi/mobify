@@ -2,15 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "client-side",
+      "src": "./client-side",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "client-side/public",
-        "ejs": true
+        "distDir": "./client-side/public",
+        "ejs": true,
+        "include": ["views/**/*"]
       }
     },
     {
-      "src": "server-side",
+      "src": "./server-side",
       "use": "@vercel/node-build",
       "config": {
         "runtime": "nodejs14"
@@ -20,11 +21,7 @@
   "routes": [
     {
       "src": "/*",
-      "dest": "client-side/public/views/index.ejs"
-    },
-    {
-      "src": "/api/*",
-      "dest": "server-side/index.js"
+      "dest": "client-side/views/index.ejs"
     }
   ]
 }

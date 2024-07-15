@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",
+      "src": "../server-side/index.js",
       "use": "@vercel/node-build",
       "config": {
         "runtime":"nodejs14"
@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "../server-side/index.js"
     }
   ]
 }

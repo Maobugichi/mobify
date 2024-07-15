@@ -1,15 +1,28 @@
 
 import express from 'express';
 import bodyParser from 'body-parser';
+import path from 'path';
+import {fileURLToPath} from "url";
+import { dirname } from 'path';
+import { renderFile } from 'ejs';
 
 const app = express();
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const viewsDir = path.resolve(__dirname, "../client-side/views")
+
+app.set('views', viewsDir)
+
+app.engine("ejs", renderFile
+)
 const port = 3000;
 
 const d = new Date();
 const month = d.getMonth()
 
 
-app.use(express.static('public'))
+app.use(express.static('../client-side/public'))
 
 app.use(bodyParser.urlencoded({
   extended:false

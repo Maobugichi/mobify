@@ -1,0 +1,521 @@
+* {
+  padding: 0;
+  margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+.upp {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+  list-style: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  
+}
+
+.upp li {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.upp li > button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F0FFFF;
+  color: #ee6c4d;
+}
+
+p:hover {
+  color: #ee6c4d;
+  cursor: pointer;
+}
+
+#hero {
+  height: 90vh;
+ background-color: #F0FFFF;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.hero {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+ color: #333;
+}
+
+.hero-left p {
+  font-size: 15px;
+  color: #333;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.hero-btn {
+  padding: 8px;
+  background-color: #333;
+  color: #ee6c4d;
+  border: none;
+  border-radius: 5px;
+  transition: transform .4s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-5px);
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.her-img {
+  width: 50%;
+  height: 100%;
+}
+
+.her-img img {
+  width: 100%;
+  height: 100%;
+}
+span {
+  color: #ee6c4d;
+}
+
+#trendy {
+  width: 100%;
+}
+
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+
+}
+
+
+.new {
+  width: 100%;
+}
+
+.vinland {
+  display: flex;
+  background: url('./tan.jpg') no-repeat ;
+  background-size: cover;
+  
+}
+
+.para {
+  padding: 20px;
+  background-color: rgba(240, 255, 255, 0.7);
+  
+  width: 50%;
+}
+
+.vinland img {
+  height: 300px;
+  width: 50%;
+}
+
+.inside-para {
+  height:237px ;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.hot {
+  width: 300px;
+  height: 440px;
+}
+
+.hot-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hot-div {
+  width: 100%;
+  height: 103px;
+  font-size: 16px;
+}
+
+ .hot img {
+  width:100%;
+  height: 254px;
+ }
+
+ #ranker {
+  background-color: #333;
+ }
+
+ .ranker-flex {
+  display: flex;
+  justify-content: space-between;
+  
+  color: white;
+ }
+
+ .ranker-left {
+  width: 60%;
+ }
+ .ranker-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 30%;
+ }
+
+ .ranker-right div {
+  display: flex;
+  gap: 10px;
+ }
+
+ .ranker-left img {
+  height: 400px;
+  width: 100%;
+ }
+
+ .ranker-right img{
+  height: 80px;
+  width: 200px;
+  border-radius: 5px;
+ }
+
+ .tweet {
+  display: flex;
+  height: 100%;
+  border-bottom: 1px #333 solid;
+  width: 1200px;
+  justify-content: center;
+ }
+
+ .tweet div {
+  overflow: auto;
+ }
+
+ .tweet h3 {
+  border: 1px #333 solid ;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+ 
+ }
+
+
+ .tweet-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0FFFF;
+  
+ }
+
+ .tweet-section h2 {
+  color: #ee6c4d;
+ }
+
+ .input {
+  width: 500px;
+  padding: 10px;
+ }
+
+ .blog-sec {
+  background-color: #F0FFFF;
+ }
+
+ .wi {
+  width: 120px;
+ }
+
+ .Attack {
+  color:#ee6c4d;
+  width: 200px;
+ }
+
+ .over-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ }
+
+.blog-flex-1 {
+  display: flex;
+  height: 623px;
+  width: 796px;
+  padding: 10px;
+  gap: 30px;
+  border: #ccc 1px solid;
+  border-radius: 3px;
+  background-color: white;
+}
+
+ .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 374px;
+  height: 480px;
+ }
+
+.left img {
+  height: 289px;
+  width: 100%;
+
+}
+
+.blog-para1 {
+  width: 330px;
+  height: 103px;
+}
+
+.blog-para1 h4 {
+ font-size: 20px;
+  font-weight: 500;
+}
+
+.blog-right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.blog-right div {
+  display: flex;
+}
+
+.blog-right img{
+  width: 144px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 398px;
+  border: #ccc 1px solid;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: white;
+}
+
+.right div {
+  display: flex;
+}
+
+
+.right img{
+  width: 144px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+#newPostBtn {
+  padding: 10px;
+  background-color: lightgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.blog-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+}
+
+.blog-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px #333 solid;
+  height: fit-content;
+}
+
+.post-cont {
+  font-size: 18px;
+}
+
+.ed {
+  margin-bottom: 20px;
+}
+
+.edit {
+  padding: 10px 20px;
+  background-color: lightblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.delete {
+  padding: 10px;
+  background-color: lightcoral;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+small {
+  color: #ccc;
+}
+
+@media (max-width:600px) {
+
+ 
+  .upp {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  .hero-left p {
+    font-size: 15px;
+    color: #333;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .hero-left {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .her-img {
+    height: 60%;
+  
+  }
+  
+  .her-img img {
+    height: 100%;
+  }
+
+  .inside-para {
+    font-size: 14px;
+  
+  }
+  
+  .hot {
+    border: #333 1px solid;
+  }
+  
+  .hot-flex {
+     gap: 10px;
+  }
+  
+  .hot-div {
+    font-size: 14px;
+  }
+  
+   .hot img {
+    height: 50%;
+   }
+
+   .ranker-flex {
+    flex-direction: column;
+   }
+  
+   .ranker-left {
+    width: 100%;
+   }
+
+
+   .ranker-right {
+    width: 100%;
+   }
+  
+  
+   .ranker-right img{
+    width: 50%;
+   }
+
+
+   .Attack {
+    margin-left: 170px;
+   }
+  
+   .over-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+
+   .blog-flex-1 {
+    
+    height: 100%;
+   }
+
+   .left {
+   font-size: 13px;
+    width: 50%;
+   }
+
+  
+   .blog-para1 {
+    width: 100%;  
+    text-align: center;
+    
+  }
+
+  .blog-para1 p {
+    width: 50%;
+    margin-left: 170px;
+  }
+  
+  
+  
+  .blog-right {
+    display: flex;
+    
+  }
+
+  .blog-right div {
+    flex-direction: column;
+  }
+  
+ 
+  
+}
